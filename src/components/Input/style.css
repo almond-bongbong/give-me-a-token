@@ -1,0 +1,23 @@
+.input {
+	display: inline-block;
+	width: 280px;
+	vertical-align: bottom;
+}
+
+.input label {
+	display: block;
+	margin-bottom: 8px;
+	text-align: left;
+	color: #777;
+	font-size: 14px;
+}
+
+.input input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	vertical-align: middle;
+}
