@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{BTbN:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return o}));var c=t("hosL");class o extends c.Component{render({platform:n}){return Object(c.h)("div",null,Object(c.h)("h1",null,"callbakc"),n)}}}}]);
