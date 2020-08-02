@@ -2,6 +2,8 @@
 
 > 소셜로그인 서버 개발 시 필요한 accessToken을 간편하게 얻을 수 있는 개발용 페이지 입니다.
 
+## [Go to page](https://almond-bongbong.github.io/give-me-a-token/)
+
 ## 사용방법
 
 ### 카카오 로그인

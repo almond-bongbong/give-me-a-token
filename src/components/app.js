@@ -1,13 +1,9 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import { Component } from 'preact';
 import Header from './Header';
 import Home from '../routes/home';
-import Callback from '../routes/Callback';
-import Profile from '../routes/profile';
 import Information from './Information';
 
 export default class App extends Component {
-	
 	handleRoute = e => {
 		this.currentUrl = e.url;
 	};
@@ -17,12 +13,7 @@ export default class App extends Component {
 			<div id="app">
 				<Header />
 				<Information />
-				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Callback path="/callback/:platform" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
-				</Router>
+				<Home />
 			</div>
 		);
 	}

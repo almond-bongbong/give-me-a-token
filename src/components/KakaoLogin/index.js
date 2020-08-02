@@ -5,7 +5,7 @@ import Result from '../Result';
 
 class KaKaoLogin extends Component {
   state = {
-    clientKey: '15aeb436a7c03a06c86277eba1ee485c',
+    clientKey: '',
     token: null,
   };
 
@@ -36,7 +36,7 @@ class KaKaoLogin extends Component {
   render() {
     return (
       <div>
-        <Input label="client key" value={this.state.clientKey} onChange={this.handleClientKey} />
+        <Input label="카카오 client key" value={this.state.clientKey} onChange={this.handleClientKey} />
         <Button color="#fee501" onClick={this.handleLogin}>카카오 로그인</Button>
         {this.state.token && (
           <Result>{this.state.token}</Result>
