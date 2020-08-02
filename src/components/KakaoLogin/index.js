@@ -3,8 +3,6 @@ import Input from '../Input';
 import Button from '../Button';
 import Result from '../Result';
 
-const { Kakao } = window;
-
 class KaKaoLogin extends Component {
   state = {
     clientKey: '15aeb436a7c03a06c86277eba1ee485c',
@@ -16,19 +14,15 @@ class KaKaoLogin extends Component {
   };
 
   handleLogin = () => {
-    console.dir(Kakao);
-
     if (!this.state.clientKey) {
       alert('Client Key를 입력해주세요.');
       return;
     }
 
-    Kakao.cleanup();
-    Kakao.init(this.state.clientKey);
-
-    Kakao.Auth.login({
+    window.Kakao.cleanup();
+    window.Kakao.init(this.state.clientKey);
+    window.Kakao.Auth.login({
       success: (response) => {
-        console.log(response);
         this.setState({
           token: response.access_token,
         });
