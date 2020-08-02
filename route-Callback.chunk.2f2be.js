@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{BTbN:function(t,o,n){"use strict";n.r(o),n.d(o,"default",(function(){return e}));var r=n("hosL"),e=function(t){function o(){return t.apply(this,arguments)||this}var n,e;return e=t,(n=o).prototype=Object.create(e.prototype),n.prototype.constructor=n,n.__proto__=e,o.prototype.render=function(t){var o=t.platform;return Object(r.h)("div",null,Object(r.h)("h1",null,"callbakc"),o)},o}(r.Component)}}]);
-//# sourceMappingURL=route-Callback.chunk.2f2be.js.map
